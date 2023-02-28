@@ -7,10 +7,7 @@ const DB_HOST = "mongodb+srv://VIktor:0eoS1xK9NiiTg3Nv@cluster0.xy2d9uu.mongodb.
 mongoose.set('strictQuery', true)
 
 mongoose.connect(DB_HOST)
-  .then(() => {
-  app.listen(3000)
-  })
-  .catch(error => {
-    console.log(error.message);
-    process.exit(1);
-  })
+
+app.listen(3000, () => {
+  console.log("Server running. Use our API on port: 3000")
+})
