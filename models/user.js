@@ -1,8 +1,8 @@
 const { Schema, model } = require('mongoose');
 const { handleMongooseError } = require('../helpers');
 const Joi = require("joi");
-const { string } = require('joi');
 
+// eslint-disable-next-line no-useless-escape
 const emailRagexp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 const userSchema = new Schema({
