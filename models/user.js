@@ -62,7 +62,7 @@ const schemas = {
   registerSchema,
   loginSchema,
   subscriptionSchema,
-  emailSchema
+  emailSchema,
 };
 
 const User = model("user", userSchema);
